@@ -1,0 +1,53 @@
+.footer
+     box-shadow: 0 -5px 13px -5px  $footer-shadow-color
+
+.my-footer
+    justify-content: space-between
+    padding: 41px 
+    .my-footer__logo
+        width: 208px
+        height: 70px
+.my-footer__nav-link
+    font: 400 15px $main-font
+    color: $second-color
+    margin-bottom: 22px
+    &:hover
+        color: $second-color
+.contact-text
+    font: 400 12px $main-font
+    color: $second-color
+    &:hover
+        color: $second-color
+.call-office-number__icon
+    width: 14px
+    height: 14px
+.call-mobile-number-icon.mr-3
+    width: 11px
+    height: 19px
+.contact-mail-icon
+    width: 16px
+    height: 12px
+.whatsapp-number-icon
+    width: 14px
+    height: 14px
+
+.copyright
+    padding: 24px 28px
+.copright-text
+    font: 400 10px $main-font
+@media (max-width: 991px)
+    .my-footer
+        padding: 41px 9px
+@media (max-width: 768px)
+    .my-footer
+        flex-direction: column
+        padding-left: 10rem
+        .my-footer__logo
+            margin-bottom: 20px
+    .contact__info__row
+        flex-direction: column
+        .d-flex
+            margin-bottom: 10px
+@media (max-width: 500px)
+    .my-footer
+        padding-left: 3rem

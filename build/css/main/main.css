@@ -74,6 +74,9 @@ a {
   overflow: hidden;
   display: inherit; }
 
+.word-break-all {
+  word-break: break-all; }
+
 body::after {
   position: absolute;
   width: 0;
@@ -101,37 +104,23 @@ body::after {
   .top-content__info-box__info .info-box__info__text {
     font: 200 14px FF Din Pro; }
 
-.top-content__info-boxt__triangle {
+.top-content__info-box__triangle {
   position: absolute;
-  bottom: -4.2rem;
+  bottom: 0;
   right: 65px;
-  width: 0;
-  height: 0;
-  border-top: 8.4rem solid white;
-  border-left: 8.4rem solid transparent;
-  -webkit-border-radius: 0 15px 0 0;
-     -moz-border-radius: 0 15px 0 0;
-          border-radius: 0 15px 0 0;
-  -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-  .top-content__info-boxt__triangle i {
-    position: absolute;
-    top: -6.8rem;
-    left: -2.5rem;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+  cursor: pointer; }
+  .top-content__info-box__triangle i {
     width: 7px;
-    height: 11px; }
+    height: 11px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto; }
 
 .main__header {
   font: 400 50px Muli, sans-serif;
-  color: #00124D;
+  color: #08202B;
   text-align: center;
   margin-top: 55px; }
 
@@ -149,7 +138,7 @@ body::after {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1020px;
+  max-width: 1020px;
   margin: auto; }
   .our-services .services-info {
     width: 510px;
@@ -197,25 +186,28 @@ body::after {
       -webkit-background-size: cover;
          -moz-background-size: cover;
               background-size: cover; }
-      .our-services .service-card .service-img:first-of-type {
-        background-image: url("../../img/service1.svg"); }
-      .our-services .service-card .service-img:nth-of-type(2) {
-        background-image: url("../../img/service2.svg"); }
-      .our-services .service-card .service-img:nth-of-type(3) {
-        background-image: url("../../img/service3.svg"); }
-      .our-services .service-card .service-img:nth-of-type(4) {
-        background-image: url("../../img/service4.svg"); }
-      .our-services .service-card .service-img:nth-of-type(5) {
-        background-image: url("../../img/service5.svg"); }
-      .our-services .service-card .service-img:nth-of-type(6) {
-        background-image: url("../../img/service1.svg"); }
     .our-services .service-card .service-header {
       font: 400 19px Muli, sans-serif;
       color: #494949;
       padding: 0 60px; }
 
-.service-img:nth-of-type(5) {
+.service-card:first-of-type .service-img {
+  background-image: url("../../img/service1.svg"); }
+
+.service-card:nth-of-type(2) .service-img {
+  background-image: url("../../img/service2.svg"); }
+
+.service-card:nth-of-type(3) .service-img {
+  background-image: url("../../img/service3.svg"); }
+
+.service-card:nth-of-type(4) .service-img {
+  background-image: url("../../img/service4.svg"); }
+
+.service-card:nth-of-type(5) .service-img {
   background-image: url("../../img/service5.svg"); }
+
+.service-card:nth-of-type(6) .service-img {
+  background-image: url("../../img/service1.svg"); }
 
 @media (max-width: 768px) {
   .top-content__info-box {
@@ -226,11 +218,17 @@ body::after {
        -moz-box-orient: vertical;
        -moz-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  .our-services .services-info {
+    max-width: 510px; } }
 
 @media (max-width: 500px) {
   .content {
-    height: 100%; } }
+    height: 100%; }
+  .our-services .services-info {
+    margin-bottom: 30px; }
+  .our-services .service-card {
+    margin-bottom: 30px; } }
 
 .my-navbar {
   width: 100%;
@@ -552,6 +550,88 @@ body::after {
     margin: 10px 0;
     width: 131px;
     height: 40px !important; } }
+
+.footer {
+  -webkit-box-shadow: 0 -5px 13px -5px #9C9C9C;
+     -moz-box-shadow: 0 -5px 13px -5px #9C9C9C;
+          box-shadow: 0 -5px 13px -5px #9C9C9C; }
+
+.my-footer {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 41px; }
+  .my-footer .my-footer__logo {
+    width: 208px;
+    height: 70px; }
+
+.my-footer__nav-link {
+  font: 400 15px Muli, sans-serif;
+  color: #08202B;
+  margin-bottom: 22px; }
+  .my-footer__nav-link:hover {
+    color: #08202B; }
+
+.contact-text {
+  font: 400 12px Muli, sans-serif;
+  color: #08202B; }
+  .contact-text:hover {
+    color: #08202B; }
+
+.call-office-number__icon {
+  width: 14px;
+  height: 14px; }
+
+.call-mobile-number-icon.mr-3 {
+  width: 11px;
+  height: 19px; }
+
+.contact-mail-icon {
+  width: 16px;
+  height: 12px; }
+
+.whatsapp-number-icon {
+  width: 14px;
+  height: 14px; }
+
+.copyright {
+  padding: 24px 28px; }
+
+.copright-text {
+  font: 400 10px Muli, sans-serif; }
+
+@media (max-width: 991px) {
+  .my-footer {
+    padding: 41px 9px; } }
+
+@media (max-width: 768px) {
+  .my-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10rem; }
+    .my-footer .my-footer__logo {
+      margin-bottom: 20px; }
+  .contact__info__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact__info__row .d-flex {
+      margin-bottom: 10px; } }
+
+@media (max-width: 500px) {
+  .my-footer {
+    padding-left: 3rem; } }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)

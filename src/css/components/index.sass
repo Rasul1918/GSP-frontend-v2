@@ -20,23 +20,24 @@
   .info-box__info__text
     font: 200 14px FF Din Pro
   
-.top-content__info-boxt__triangle
+.top-content__info-box__triangle
   position: absolute
-  bottom: -4.2rem
+  bottom: 0
   right: 65px
-  width: 0
-  height: 0
-  border-top: 8.4rem solid white
-  border-left: 8.4rem solid transparent
-  border-radius: 0 15px 0 0 
-  transform: rotate(-45deg)
+  cursor: pointer
+  // width: 0
+  // height: 0
+  // border-style: solid
+  // border-width: 0 59px 38px 59px
+  // border-color: transparent transparent red transparent
   i 
-    position: absolute
-    top: -6.8rem
-    left: -2.5rem
-    transform: rotate(45deg)
     width: 7px
     height: 11px
+    position: absolute
+    top: 20px
+    left: 0
+    right: 0
+    margin: auto
   
 .main__header 
   font: 400 50px $main-font
@@ -48,7 +49,7 @@
   display: flex
   flex-wrap: wrap
   justify-content: center
-  width: 1020px
+  max-width: 1020px
   margin: auto
   .services-info
     width: 510px
@@ -84,29 +85,43 @@
       background-repeat: no-repeat
       background-position: center
       background-size: cover
-      &:first-of-type
-        background-image: url('../../img/service1.svg')
-      &:nth-of-type(2)
-        background-image: url('../../img/service2.svg')
-      &:nth-of-type(3)
-        background-image: url('../../img/service3.svg')
-      &:nth-of-type(4)
-        background-image: url('../../img/service4.svg')
-      &:nth-of-type(5)
-        background-image: url('../../img/service5.svg')
-      &:nth-of-type(6)
-        background-image: url('../../img/service1.svg')
     .service-header
       font: 400 19px $main-font
       color: $service-header-color
       padding: 0 60px
-.service-img:nth-of-type(5)
-  background-image: url('../../img/service5.svg')
+
+.service-card:first-of-type
+  .service-img
+    background-image: url('../../img/service1.svg')
+.service-card:nth-of-type(2)
+  .service-img
+    background-image: url('../../img/service2.svg')
+.service-card:nth-of-type(3)
+  .service-img
+    background-image: url('../../img/service3.svg')
+.service-card:nth-of-type(4)
+  .service-img
+    background-image: url('../../img/service4.svg')
+.service-card:nth-of-type(5)
+  .service-img
+    background-image: url('../../img/service5.svg')
+.service-card:nth-of-type(6)
+  .service-img
+    background-image: url('../../img/service1.svg')
+        
 @media (max-width: 768px)
   .top-content__info-box
     position: relative
     flex-direction: column
+  .our-services
+    .services-info
+      max-width: 510px
 
 @media (max-width: 500px)
   .content
     height: 100%
+  .our-services
+    .services-info
+      margin-bottom: 30px
+    .service-card
+      margin-bottom: 30px
