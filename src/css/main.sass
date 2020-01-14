@@ -1,0 +1,29 @@
+$main-font: Muli, sans-serif
+$main-color: #24873D
+$second-color: #00124D
+$service-header-color: #494949
+$shadow-color: #E8F2FF
+$button-color: #F7791C
+$third-color: #868BA2
+html
+	font-size: 10px
+body
+	width: 100%
+	height: 100%
+	margin: 0
+	padding: 0
+	font-family: $main-font
+a 
+	text-decoration: none!important
+@media (max-width: 991px)
+	html
+		font-size: 6px
+	
+@import components/common
+@import components/preloader
+@import components/mixin
+@import components/index
+@import components/navbar
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/progress-tracker/app/styles/progress-tracker.scss"

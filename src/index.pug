@@ -1,0 +1,44 @@
+extends pug_template/head
+
+block unique-content
+    .content
+        include pug_template/navbar.pug
+        main.main
+            .top-content.position-relative
+                img.w-100(src="img/home-bg.svg")
+                .top-content__info-box.w-100.d-flex.align-items-center.justify-content-around
+                    .top-content__info-box__info
+                        h2.info-box__info__header Keyfiyyətli Xidmət Yalnız Bizimlə! 
+                        p.info-box__info__text
+                            | 2008-ci ildə əsası qoyulmuş “Global Service Provider” MMC çoxşaxəli İT xidmətlərini 
+                            | bir ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən aparıcı informasiya 
+                            | və kommunikasiya şirkətidir.
+                    .top-content__info-boxt__triangle
+                        i.fa.fa-chevron-down
+            .main__header Xidmətlərimiz
+            .our-services
+                .services-info
+                    .services-info__header Sizin üçün edəcəklərimiz
+                    hr.services-green-line
+                    .services-info__text
+                        | 2008-ci ildə əsası qoyulmuş “Global Service Provider” MMC çoxşaxəli İT 
+                        | xidmətlərini bir ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən 
+                        | aparıcı informasiya və kommunikasiya şirkətidir.
+                a.service-card(href="").d-flex.flex-column.align-items-center.justify-content-center
+                    .service-img.mb-4
+                    h2.service-header.mt-3.text-center İnternet və Data xidməti
+                a.service-card(href="").d-flex.flex-column.align-items-center.justify-content-center
+                    .service-img.mb-4
+                    h2.service-header.mt-3.text-center Web sayt xidmətləri
+                a.service-card(href="").d-flex.flex-column.align-items-center.justify-content-center
+                    .service-img.mb-4
+                    h2.service-header.mt-3.text-center İP telefoniya, TV xidməti
+                a.service-card(href="").d-flex.flex-column.align-items-center.justify-content-center
+                    .service-img.mb-4
+                    h2.service-header.mt-3.text-center GPS və CİS xidməti
+                a.service-card(href="").d-flex.flex-column.align-items-center.justify-content-center
+                    .service-img.mb-4
+                    h2.service-header.mt-3.text-center Konsaltinq və Outsoursinq
+                a.service-card(href="").d-flex.flex-column.align-items-center.justify-content-center
+                    .service-img.mb-4
+                    h2.service-header.mt-3.text-center Servis mərkəzi

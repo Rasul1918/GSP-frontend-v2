@@ -1,0 +1,112 @@
+.content
+  width: 100%
+
+//MAIN
+.main
+  // height: calc(100% - 10rem)
+
+.top-content__info-box
+  position: absolute
+  height: 229px
+  background-color: $main-color
+  left: 0
+  bottom: 0
+.top-content__info-box__info
+  max-width: 520px
+  height: 112px
+  color: white
+  .info-box__info__header
+    font: 700 28px DIN Pro
+  .info-box__info__text
+    font: 200 14px FF Din Pro
+  
+.top-content__info-boxt__triangle
+  position: absolute
+  bottom: -4.2rem
+  right: 65px
+  width: 0
+  height: 0
+  border-top: 8.4rem solid white
+  border-left: 8.4rem solid transparent
+  border-radius: 0 15px 0 0 
+  transform: rotate(-45deg)
+  i 
+    position: absolute
+    top: -6.8rem
+    left: -2.5rem
+    transform: rotate(45deg)
+    width: 7px
+    height: 11px
+  
+.main__header 
+  font: 400 50px $main-font
+  color: $second-color
+  text-align: center
+  margin-top: 55px
+
+.our-services
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  width: 1020px
+  margin: auto
+  .services-info
+    width: 510px
+    height: 196px
+    border: solid 1px #F3F3F3
+    background: white
+    transition: 0.4s all
+    &:hover
+      border-color: transparent
+      box-shadow: 3px 3px 11px rgba(0,0,0, .16)
+    .services-info__header
+      font: 700 29px $main-font
+      margin: 30px 0 0 10px
+    .services-green-line
+      width: 67px
+      border: solid 3px $main-color
+      margin: 11px 0 18px 10px
+    .services-info__text
+      font: 200 13px $main-font 
+      padding: 0 41px 15px 10px
+  .service-card
+    width: 255px
+    height: 196px
+    border: solid 1px #F3F3F3
+    background-color: white 
+    transition: 0.4s all
+    &:hover
+      border: transparent
+      box-shadow: 3px 3px 11px rgba(0,0,0, .16)
+    .service-img
+      width: 43px
+      height: 43px
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      &:first-of-type
+        background-image: url('../../img/service1.svg')
+      &:nth-of-type(2)
+        background-image: url('../../img/service2.svg')
+      &:nth-of-type(3)
+        background-image: url('../../img/service3.svg')
+      &:nth-of-type(4)
+        background-image: url('../../img/service4.svg')
+      &:nth-of-type(5)
+        background-image: url('../../img/service5.svg')
+      &:nth-of-type(6)
+        background-image: url('../../img/service1.svg')
+    .service-header
+      font: 400 19px $main-font
+      color: $service-header-color
+      padding: 0 60px
+.service-img:nth-of-type(5)
+  background-image: url('../../img/service5.svg')
+@media (max-width: 768px)
+  .top-content__info-box
+    position: relative
+    flex-direction: column
+
+@media (max-width: 500px)
+  .content
+    height: 100%
