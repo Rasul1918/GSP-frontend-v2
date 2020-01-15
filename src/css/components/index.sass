@@ -13,7 +13,7 @@
   bottom: 0
 .top-content__info-box__info
   max-width: 520px
-  height: 112px
+  margin-left: 133px
   color: white
   .info-box__info__header
     font: 700 28px DIN Pro
@@ -21,6 +21,8 @@
     font: 200 14px FF Din Pro
   
 .top-content__info-box__triangle
+  width: 11.8rem
+  height: 3.8rem
   position: absolute
   bottom: 0
   right: 65px
@@ -31,13 +33,14 @@
   // border-width: 0 59px 38px 59px
   // border-color: transparent transparent red transparent
   i 
-    width: 7px
+    width: 13px
     height: 11px
     position: absolute
-    top: 20px
+    top: 2rem
     left: 0
     right: 0
     margin: auto
+    font-size: 13px
   
 .main__header 
   font: 400 50px $main-font
@@ -112,16 +115,22 @@
 @media (max-width: 768px)
   .top-content__info-box
     position: relative
-    flex-direction: column
+    // flex-direction: column
+    .top-content__info-box__info
+      margin: 0 auto
   .our-services
     .services-info
       max-width: 510px
 
+
 @media (max-width: 500px)
   .content
     height: 100%
+  .top-content__info-box
+    padding: 0 17px
   .our-services
     .services-info
-      margin-bottom: 30px
+      height: auto
+      margin: 0 20px 30px 20px
     .service-card
       margin-bottom: 30px

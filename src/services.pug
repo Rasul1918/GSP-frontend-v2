@@ -1,0 +1,19 @@
+extends pug_template/head
+
+block unique-content
+    .content
+        //- include pug_template/navbar.pug
+        main.main
+            ol.breadCrumb.mb-5
+                li.px-4.breadCrumb-item
+                    a.breadCrumb-link.breadCrumb-passive-link Xidmətlər
+                | |
+                li.px-4.breadCrumb-item.breadCrumb--active
+                    | İnternet və Data xidməti
+            .subMenu.table-responsive.d-flex.align-items-center
+                a(href="#").subMenu__item.mr-4.subMenu__item--active İnternet və Data xidməti
+                a(href="#").subMenu__item.mr-4 Web sayt xidmətləri
+                a(href="#").subMenu__item.mr-4 İP Telefoniya, TV xidməti
+                a(href="#").subMenu__item.mr-4 GPS və CİS xidməti
+                a(href="#").subMenu__item.mr-4 Konsaltinq və Outsoursinq
+                a(href="#").subMenu__item.mr-4 Servis Mərkəzi

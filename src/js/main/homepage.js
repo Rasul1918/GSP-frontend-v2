@@ -33,4 +33,34 @@ const toggleNav = e => {
     });
 }
 
-export {ableSearch, disableSearch,toggleNav}
+const toDown = () => {
+    $(".top-content__info-box__triangle").click(() => {
+        const topPos = $("#services-header").offset().top;
+        $("html,body").animate({scrollTop: topPos-50},700);
+    })
+}
+
+const slickSlider = () => {
+    $(".my-slider").slick({
+        dots: true,
+        slidesToShow: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 600,
+        arrows: true,
+        // centerMode: true,
+        // prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-chevron-left"></i></button>',
+        // nextArrow: '<button type="button" class="slick-next">Next</button>',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3
+            }
+        }
+    ]       
+});
+}
+
+export {ableSearch, disableSearch,toggleNav,toDown,slickSlider}
