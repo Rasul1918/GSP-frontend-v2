@@ -1,6 +1,7 @@
 .my-slider
-    margin: 0 70px
+    margin: 0 7rem
     .slick-list
+        max-width: 920px
         .slick-track
             display: flex
             justify-content: space-evenly
@@ -9,3 +10,20 @@
                 height: 130px
 .slick-dots
     display: none!important
+.slide-arrow 
+    width: 57px
+    height: 57px
+    border-radius: 50%
+    border: solid 2px $main-color
+    background-color: white
+    outline: 0!important
+    i
+        color: $main-color
+    &:hover
+        background-color: $main-color
+        i
+            color: white
+.prev-arrow
+    margin-right: 5.3rem
+.next-arrow
+    margin-left: 5.3rem

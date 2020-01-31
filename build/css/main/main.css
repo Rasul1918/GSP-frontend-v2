@@ -675,24 +675,48 @@ body::after {
   color: white; }
 
 .my-slider {
-  margin: 0 70px; }
-  .my-slider .slick-list .slick-track {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-       -moz-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
-    .my-slider .slick-list .slick-track .my-slider__item {
-      width: 132px !important;
-      height: 130px; }
+  margin: 0 7rem; }
+  .my-slider .slick-list {
+    max-width: 920px; }
+    .my-slider .slick-list .slick-track {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+         -moz-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      .my-slider .slick-list .slick-track .my-slider__item {
+        width: 132px !important;
+        height: 130px; }
 
 .slick-dots {
   display: none !important; }
+
+.slide-arrow {
+  width: 57px;
+  height: 57px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: solid 2px #24873D;
+  background-color: white;
+  outline: 0 !important; }
+  .slide-arrow i {
+    color: #24873D; }
+  .slide-arrow:hover {
+    background-color: #24873D; }
+    .slide-arrow:hover i {
+      color: white; }
+
+.prev-arrow {
+  margin-right: 5.3rem; }
+
+.next-arrow {
+  margin-left: 5.3rem; }
 
 @font-face {
   font-family: "FF DIN Pro";
