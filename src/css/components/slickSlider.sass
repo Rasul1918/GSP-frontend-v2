@@ -8,6 +8,8 @@
             .my-slider__item
                 width: 132px!important
                 height: 130px
+                outline: 0
+                margin: 0 auto
 .slick-dots
     display: none!important
 .slide-arrow 
@@ -19,6 +21,7 @@
     outline: 0!important
     i
         color: $main-color
+        font-size: 20px
     &:hover
         background-color: $main-color
         i
@@ -27,3 +30,13 @@
     margin-right: 5.3rem
 .next-arrow
     margin-left: 5.3rem
+
+
+@media (max-width: 768px)
+    .my-slider
+        margin: 0 3rem
+    .slide-arrow
+        max-width: 40px
+        min-width: 40px
+        min-height: 40px
+        max-height: 40px

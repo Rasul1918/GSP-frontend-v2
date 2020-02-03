@@ -46,7 +46,7 @@ const slickSlider = () => {
         slidesToShow: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         speed: 600,
         arrows: true,
         // centerMode: true,
@@ -56,11 +56,12 @@ const slickSlider = () => {
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 3
+              slidesToShow: 3,
+              centerMode: true
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 600,
             settings: {
               slidesToShow: 1
             }

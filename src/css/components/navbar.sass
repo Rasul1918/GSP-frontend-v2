@@ -1,4 +1,5 @@
 .my-navbar
+  position: absolute
   width: 100%
   background-color: rgba(0, 0, 0, 0.5)
   display: flex
@@ -6,6 +7,36 @@
   justify-content: space-between
   height: 8rem
   z-index: 100
+
+.nav-second-type
+  position: relative
+  background-color: white
+  box-shadow: 2px -6px 13px black
+  // box-shadow: 0 -5px 13px -5px  $footer-shadow-color
+  .nv-collapse
+    background-color: white
+    .nv-list
+      .nv-item
+        .nv-link
+          color: $nav-color
+          opacity: 1
+          border-top: solid 4px transparent
+          &:hover
+            border-top: solid 4px $main-color
+    .search
+      .search-btn
+        .search-icon
+          color: $nav-color
+      .search-form
+        background-color: white
+        .search-input
+          color: $nav-color
+  .hamburger
+    div
+      background-color: $nav-color
+
+.nv-link--active
+  border-top: solid 4px $main-color!important
 
 .hamburger
   width: 30px
@@ -62,10 +93,11 @@
   text-decoration: none
   padding: 0 1.7rem
   font: 400 15px DIN Pro
-  color: white!important
+  color: white
   opacity: 0.8
   transition: .4s all
   &:hover
+    color: white
     opacity: 1
 
 .speed-test-btn
@@ -151,10 +183,11 @@
   flex-direction: column!important
   position: absolute
   width: 100%
-  top: 2rem
+  // top: 2rem
+  top: 0
   left: 0
   right: 0
-  padding: 0 8rem
+  padding: 2rem 8rem 0 8rem
   background-color: black
   z-index: 200
   .nv-list

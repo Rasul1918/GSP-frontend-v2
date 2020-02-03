@@ -1,0 +1,22 @@
+extends pug_template/head
+
+block unique-content
+    .content
+        include pug_template/navbar.pug
+        main.main
+            .container
+                h1.content-header Haqqımızda
+                .green-line
+                p.mb-5.content-text 
+                    | 2008-ci ildə əsası qoyulmuş “Global Service Provider” MMC çoxşaxəli İT xidmətlərini bir ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən aparıcı informasiya və kommunikasiya şirkətidir. Biz İKT-nin gücündən yararlanaraq və Azərbaycan bazarında mövcud 10 ilik təcrübəmizdən çıxış edərək cəmiyyətimizn rəqəmsal gələcəyini müştərilərimizlə birgə formalaşdırırıq.
+                    | Şirkətin əsas fəaliyyəti İT Autsoursinq, Mini ATS-lərin və İP telefonların quraşdırılması, internet şəbəkələrin quraşdırılması, İnternet və İntranet, daxili və magistral şəbəkələrin quraşdırılması, otel və istirahət məkanlarında WİFİ zonanın yaradılması, İT məhsullarının satışı və təmiri kimi və digər İT xidmətlərini əhatə edir.
+                a.go-report(href="#") Hesabatı gör
+                .row
+                    .about-card
+                        img(src="img/quality.svg").about-card__img
+                        .about-card__header Keyfiyyət
+                        .about-card__info
+                            | Xidmətlərimizdə keyfiyyəti artıq ilk istifadədən görəbilərsiniz
+
+        include pug_template/footer.pug
+
