@@ -18,6 +18,9 @@ a {
 .MT-16 {
   margin-top: 16.5rem; }
 
+.MT-7 {
+  margin-top: 7rem; }
+
 .MT-6 {
   margin-top: 6rem; }
 
@@ -764,21 +767,105 @@ body::after {
           border-radius: 4px;
   -webkit-box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
      -moz-box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12); }
+          box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
   .go-report:hover {
-    color: #24873D; }
+    color: white;
+    background-color: #24873D; }
+
+.about-card {
+  margin-bottom: 6.5rem;
+  -webkit-box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+     -moz-box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px; }
+
+.big-about-card {
+  width: 294px;
+  height: 220px; }
+
+.small-about-card {
+  width: 231px;
+  height: 222px; }
 
 .about-card__img {
   position: absolute;
-  top: -40%;
+  top: -10%;
+  right: 0;
+  left: 0;
   margin: 0 auto; }
 
-.about-card-header {
+.about-card__header {
+  margin-bottom: 22px;
   font: 700 24px Muli, sans-serif;
   color: #494949; }
 
-.about-card-info {
+.about-card__info {
+  margin: 0 32px;
   font: 200 14px Muli, sans-serif; }
+
+@media (max-width: 768px) {
+  .about-card {
+    margin-right: auto;
+    margin-left: auto; } }
+
+.project {
+  height: 300px;
+  margin-bottom: 6rem;
+  padding: 3.2rem 5rem;
+  -webkit-box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+     -moz-box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px; }
+
+.project__img-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 32%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%; }
+
+.project__img {
+  min-width: 17rem;
+  max-width: 22.2rem;
+  min-height: 19rem;
+  max-height: 23.6rem; }
+
+.project__info__header {
+  font: 700 18px Muli, sans-serif;
+  color: #24873D; }
+
+@media (max-width: 768px) {
+  .project {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .project__info__header {
+    margin-top: 10px; } }
+
+.accordion-header {
+  font: 600 24px Muli, sans-serif;
+  color: #08202B; }
+
+.accordion-arrow {
+  font-size: 30px !important; }
 
 @font-face {
   font-family: "FF DIN Pro";

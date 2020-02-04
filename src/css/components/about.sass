@@ -4,15 +4,36 @@
     color: $main-color
     border-radius: 4px
     box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12)
+    transition: all 0.4s ease
     &:hover
-        color: $main-color
+        color: white
+        background-color: $main-color
 
+.about-card
+    margin-bottom: 6.5rem
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16)
+    border-radius: 10px
+.big-about-card
+    width: 294px
+    height: 220px
+.small-about-card
+    width: 231px
+    height: 222px
 .about-card__img
     position: absolute
-    top: -40%
+    top: -10%
+    right: 0
+    left: 0
     margin: 0 auto
-.about-card-header
+.about-card__header
+    margin-bottom: 22px
     font: 700 24px $main-font
     color: $content-text-color
-.about-card-info
-    font: 200 14px $main-font
+.about-card__info
+    margin: 0 32px
+    font: 200 14px $main-font 
+
+@media (max-width: 768px)
+    .about-card
+        margin-right: auto
+        margin-left: auto

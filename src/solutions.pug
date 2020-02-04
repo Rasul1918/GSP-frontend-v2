@@ -1,0 +1,42 @@
+extends pug_template/head
+
+block unique-content
+    .content
+        include pug_template/navbar.pug
+        main.main
+            .container
+                h1.content-header Həllər
+                .green-line   
+                .content-text
+                    | 2008-ci ildə əsası qoyulmuş “Global Service Provider” MMC çoxşaxəli İT xidmətlərini bir ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən aparıcı informasiya və kommunikasiya şirkətidir. Biz İKT-nin gücündən yararlanaraq və Azərbaycan bazarında mövcud 10 ilik təcrübəmizdən çıxış edərək cəmiyyətimizn rəqəmsal gələcəyini müştərilərimizlə birgə formalaşdırırıq.
+                    | Şirkətin əsas fəaliyyəti İT Autsoursinq, Mini ATS-lərin və İP telefonların quraşdırılması, internet şəbəkələrin quraşdırılması, İnternet və İntranet, daxili və magistral şəbəkələrin quraşdırılması, otel və istirahət məkanlarında WİFİ zonanın yaradılması, İT məhsullarının satışı və təmiri kimi və digər İT xidmətlərini əhatə edir.
+                #accordionExample.accordion.mt-5
+                    .card
+                        #headingOne.card-header
+                            h2.mb-0
+                                button.btn.d-flex.align-items-center(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                    i.fa.fa-chevron-right.accordion-arrow.mr-5
+                                    h1.accordion-header  Collapsible Group Item #1
+                        #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+                            .card-body
+                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    .card
+                        #headingTwo.card-header
+                            h2.mb-0
+                                button.btn.accordion-header.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                                    h1.accordion-header Collapsible Group Item #2
+                        #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
+                            .card-body
+                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    .card
+                        #headingThree.card-header
+                            h2.mb-0
+                                button.btn.accordion-header.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                                    h1.accordion-header Collapsible Group Item #3
+                        #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                            .card-body
+                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+              
+        include pug_template/footer.pug
+

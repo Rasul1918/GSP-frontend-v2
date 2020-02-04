@@ -1,0 +1,24 @@
+.project
+    height: 300px
+    margin-bottom: 6rem
+    padding: 3.2rem 5rem
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16)
+    border-radius: 10px
+.project__img-box
+    display: flex
+    flex: 0 0 32%
+.project__img
+    min-width: 17rem
+    max-width: 22.2rem
+    min-height: 19rem
+    max-height: 23.6rem
+.project__info__header
+    font: 700 18px $main-font
+    color: $main-color
+
+@media (max-width: 768px)
+    .project
+        height: auto
+        flex-direction: column
+    .project__info__header
+        margin-top: 10px
