@@ -1,5 +1,32 @@
 .accordion-header
     font: 600 24px $main-font
     color: $second-color
+    transition: all 0.4s ease  
 .accordion-arrow
+    margin-right: 3rem
     font-size: 30px!important
+    transition: all 0.4s ease
+
+.accordion__item
+    background-color: white!important
+    border: solid 1px rgba(112, 112, 112, 0.3)!important
+    transition: all 0.4s ease
+    .accordion__item__header
+        border: 0
+        h2
+            button
+                box-shadow: none
+
+.accordion__item--active
+    border-radius: 10px
+    border-color: white!important
+    box-shadow: 2px 3px 35px rgba(44, 53, 46, 0.05)
+    .card-header
+        h2
+            button
+                .accordion-arrow
+                    color: $main-color
+                    // margin-right: 0
+                    transform: rotate(90deg)
+                .accordion-header
+                    color: $main-color

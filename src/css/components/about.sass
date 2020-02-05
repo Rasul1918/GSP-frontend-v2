@@ -9,16 +9,30 @@
         color: white
         background-color: $main-color
 
+
+.big-card-parent
+    word-break: break-word
+.big-card-parent::after
+    width: 294px
+.small-card-parent
+    word-break: break-word
+.small-card-parent::after
+    width: 231px
+
 .about-card
+    // margin: 0 2.7rem 6.5rem 2.7rem
     margin-bottom: 6.5rem
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16)
     border-radius: 10px
 .big-about-card
     width: 294px
     height: 220px
+    // margin: 0 3.8rem 6.5rem 3.8rem
 .small-about-card
     width: 231px
     height: 222px
+// .small-about-card::after
+//         width: 231px
 .about-card__img
     position: absolute
     top: -10%
@@ -33,7 +47,9 @@
     margin: 0 32px
     font: 200 14px $main-font 
 
+
+
 @media (max-width: 768px)
-    .about-card
-        margin-right: auto
-        margin-left: auto
+    // .about-card
+    //     margin-right: auto
+    //     margin-left: auto

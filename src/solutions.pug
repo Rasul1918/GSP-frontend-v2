@@ -11,31 +11,49 @@ block unique-content
                     | 2008-ci ildə əsası qoyulmuş “Global Service Provider” MMC çoxşaxəli İT xidmətlərini bir ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən aparıcı informasiya və kommunikasiya şirkətidir. Biz İKT-nin gücündən yararlanaraq və Azərbaycan bazarında mövcud 10 ilik təcrübəmizdən çıxış edərək cəmiyyətimizn rəqəmsal gələcəyini müştərilərimizlə birgə formalaşdırırıq.
                     | Şirkətin əsas fəaliyyəti İT Autsoursinq, Mini ATS-lərin və İP telefonların quraşdırılması, internet şəbəkələrin quraşdırılması, İnternet və İntranet, daxili və magistral şəbəkələrin quraşdırılması, otel və istirahət məkanlarında WİFİ zonanın yaradılması, İT məhsullarının satışı və təmiri kimi və digər İT xidmətlərini əhatə edir.
                 #accordionExample.accordion.mt-5
-                    .card
-                        #headingOne.card-header
+                    .card.accordion__item.mb-4
+                        #headingOne.card-header.accordion__item__header.bg-white
                             h2.mb-0
                                 button.btn.d-flex.align-items-center(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-                                    i.fa.fa-chevron-right.accordion-arrow.mr-5
-                                    h1.accordion-header  Collapsible Group Item #1
-                        #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
-                            .card-body
-                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .card
-                        #headingTwo.card-header
+                                    i.fa.fa-chevron-right.accordion-arrow
+                                    h1.accordion-header  Məlumat Mərkəzi
+                        #collapseOne.collapse(aria-labelledby='headingOne', data-parent='#accordionExample')
+                            .card-body.px-5.py-4
+                                img.img-fluid.float-right(src="img/wvcgo3mita.svg",alt="solution device")
+                                p.content-text.text-justify
+                                    | IP kameraların üzərində ümumiyyətlə ən az bir ədəd həyəcan qəbul edici girişi və ən az bir ədəd göndərici çıxışı mövcuddur, hansı ki onların köməyiylə sistemdəki dedektorlardan gələn həyəcanlara görə ya göndərici çıxışları üzərindən bir siqnal və ya başqa bir xəbərdaredici vasitə işlədilə bilər və ya həyəcan siqnalı kameradan mərkəzi proqramına çatdırılaraq təhlükəsizlik operatoruna həyəcan mesajı verilə bilər. IP kameralar həyəcan vəziyyətində təyin olunan bir ünvana mail və ya bir ftp serverinə həyəcan anında çəkdiyi rəsmi göndərilərək vəziyyəti çatdıra bilər.
+                                    | Videodan Hərəkət Təsbit etmə (VMD – Video montion detection)
+                                    | IP kameralar, görüntüdən hərəkət qəbul etmə və buna görə həyəcan verə bilmə qabiliyyətlərinə malikdir... Lakin, səhv həyəcanlara yarandığından, ağıllı
+                                    | IP kameraların üzərində ümumiyyətlə ən az bir ədəd həyəcan qəbul edici girişi və ən az bir ədəd göndərici çıxışı mövcuddur, hansı ki onların köməyiylə sistemdəki dedektorlardan gələn həyəcanlara görə ya göndərici çıxışları üzərindən bir siqnal və ya başqa bir xəbərdaredici vasitə işlədilə bilər və ya həyəcan siqnalı kameradan mərkəzi proqramına çatdırılaraq təhlükəsizlik operatoruna həyəcan mesajı verilə bilər. IP kameralar həyəcan vəziyyətində təyin olunan bir ünvana mail və ya bir ftp serverinə həyəcan anında çəkdiyi rəsmi göndərilərək vəziyyəti çatdıra bilər.
+                                    | Videodan Hərəkət Təsbit etmə (VMD – Video montion detection)
+                                    | IP kameralar, görüntüdən hərəkət qəbul etmə və buna görə həyəcan verə bilmə qabiliyyətlərinə malikdir... Lakin, səhv həyəcanlara yarandığından, ağıllı hərəkət qəbul etmə və obyekt qəbul etmə proqramları geniş şəkildə tələb edilməyə başlanılmışdır.
+                                    | Ağıllı Görüntü Analizi (IVA – Intelligent Video Analysis)
+                                    | Son zamanlar təhlükəsizlik kameralarının sayı artdıqca, müvafiq olaraq izləmək üçün lazımlı təhlükəsizlik işçisinin sayı da artır. Araşdırmalara əsasən yalnız iki monitorda çox sayda kameranı izləyən bir təhlükəsizlik işçisinin 22 dəqiqə sonra diqqətinin %95 dağıldığından, kameraların yalnız görüntü mərkəzə çatdırmasından kənar, gördükləri şübhəli vəziyyətlərə qarşı ağıllı alqoritmlər ilə həyəcan meydana gətirərək mərkəzə həyəcan mesajları da göndərə bilmələri ehtiyacı yaranmışdır.
+                                    | IP kamera və video koderlərin öz üzərindəki cihaz proqramında Ağıllı Görüntü Analiz proqramı (IVA) ilə “ucda ağıllı analiz” getdikcə yayılır. IP kamerada bu xüsusiyyət olmadığında görüntü analizi mərkəzdəki analiz serveri üzərində edilir. Analiz serveri ümumiyyətlə ən çox 4 və ya 8 ədəd IP kameranın görüntü analizini edə bilir. Bu da çox sayda kameradan ibarət olan sistemlərdə server sayını və sistem xərcini artırır.
+                                    | Lakin, görüntü analizinə (VCA (Video Content Analysis)) sahib sistemlər eyni zamanda qeyd və bant genişliyi  baxımından   böyük qənaətlərə şərait yaradır və lazım olan təhlükəsizlik işçisi sayını da azaldaraq xərclərin azalmasını təmin edir.
+                                    | Görüntü analiz alqoritmləri bir neçə il əvvəl ilə müqayisədə daha da ağıllı xüsusiyyətlərə sahib olmağa davam edir və nisbətən çox daha sadə olan Video Hərəkət Qəbul etmə (VMD) sistemlərinə görə olduqca irəliləyir. Ağıllı VCA (qısaca IVA), real zamanlı görüntülərdəki şübhəli fəaliyyətləri ya da həyəcan vəziyyətlərinin təyin olunması üçün “təyin olunan qaydaları” canlı görüntüdə davamlı analiz edir. Hal-hazırda IVA alqoritmləri: tək hərəkət qəbul etmə tutumuna sahib deyil
+                                    | eyni zamanda sahibsiz cisimlərin hərəkət istiqamətinin, sürətlərinin təsadüfi gəzmə kimi şübhəli davranışların real zamanlı olaraq təyin oluna bilməsini də təmin edir.                         
+                    .card.accordion__item.mb-4
+                        #headingTwo.card-header.accordion__item__header.bg-white
                             h2.mb-0
-                                button.btn.accordion-header.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                                    h1.accordion-header Collapsible Group Item #2
+                                button.btn.d-flex.align-items-center(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo')
+                                    i.fa.fa-chevron-right.accordion-arrow
+                                    h1.accordion-header  Perimetr üzrə Mühafizə Xidməti
                         #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
-                            .card-body
-                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .card
-                        #headingThree.card-header
-                            h2.mb-0
-                                button.btn.accordion-header.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                                    h1.accordion-header Collapsible Group Item #3
-                        #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
-                            .card-body
-                                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            .card-body.px-5.py-4
+                                img.img-fluid.float-right(src="img/wvcgo3mita.svg",alt="solution device")
+                                p.content-text.text-justify
+                                    | IP kameraların üzərində ümumiyyətlə ən az bir ədəd həyəcan qəbul edici girişi və ən az bir ədəd göndərici çıxışı mövcuddur, hansı ki onların köməyiylə sistemdəki dedektorlardan gələn həyəcanlara görə ya göndərici çıxışları üzərindən bir siqnal və ya başqa bir xəbərdaredici vasitə işlədilə bilər və ya həyəcan siqnalı kameradan mərkəzi proqramına çatdırılaraq təhlükəsizlik operatoruna həyəcan mesajı verilə bilər. IP kameralar həyəcan vəziyyətində təyin olunan bir ünvana mail və ya bir ftp serverinə həyəcan anında çəkdiyi rəsmi göndərilərək vəziyyəti çatdıra bilər.
+                                    | Videodan Hərəkət Təsbit etmə (VMD – Video montion detection)
+                                    | IP kameralar, görüntüdən hərəkət qəbul etmə və buna görə həyəcan verə bilmə qabiliyyətlərinə malikdir... Lakin, səhv həyəcanlara yarandığından, ağıllı
+                                    | IP kameraların üzərində ümumiyyətlə ən az bir ədəd həyəcan qəbul edici girişi və ən az bir ədəd göndərici çıxışı mövcuddur, hansı ki onların köməyiylə sistemdəki dedektorlardan gələn həyəcanlara görə ya göndərici çıxışları üzərindən bir siqnal və ya başqa bir xəbərdaredici vasitə işlədilə bilər və ya həyəcan siqnalı kameradan mərkəzi proqramına çatdırılaraq təhlükəsizlik operatoruna həyəcan mesajı verilə bilər. IP kameralar həyəcan vəziyyətində təyin olunan bir ünvana mail və ya bir ftp serverinə həyəcan anında çəkdiyi rəsmi göndərilərək vəziyyəti çatdıra bilər.
+                                    | Videodan Hərəkət Təsbit etmə (VMD – Video montion detection)
+                                    | IP kameralar, görüntüdən hərəkət qəbul etmə və buna görə həyəcan verə bilmə qabiliyyətlərinə malikdir... Lakin, səhv həyəcanlara yarandığından, ağıllı hərəkət qəbul etmə və obyekt qəbul etmə proqramları geniş şəkildə tələb edilməyə başlanılmışdır.
+                                    | Ağıllı Görüntü Analizi (IVA – Intelligent Video Analysis)
+                                    | Son zamanlar təhlükəsizlik kameralarının sayı artdıqca, müvafiq olaraq izləmək üçün lazımlı təhlükəsizlik işçisinin sayı da artır. Araşdırmalara əsasən yalnız iki monitorda çox sayda kameranı izləyən bir təhlükəsizlik işçisinin 22 dəqiqə sonra diqqətinin %95 dağıldığından, kameraların yalnız görüntü mərkəzə çatdırmasından kənar, gördükləri şübhəli vəziyyətlərə qarşı ağıllı alqoritmlər ilə həyəcan meydana gətirərək mərkəzə həyəcan mesajları da göndərə bilmələri ehtiyacı yaranmışdır.
+                                    | IP kamera və video koderlərin öz üzərindəki cihaz proqramında Ağıllı Görüntü Analiz proqramı (IVA) ilə “ucda ağıllı analiz” getdikcə yayılır. IP kamerada bu xüsusiyyət olmadığında görüntü analizi mərkəzdəki analiz serveri üzərində edilir. Analiz serveri ümumiyyətlə ən çox 4 və ya 8 ədəd IP kameranın görüntü analizini edə bilir. Bu da çox sayda kameradan ibarət olan sistemlərdə server sayını və sistem xərcini artırır.
+                                    | Lakin, görüntü analizinə (VCA (Video Content Analysis)) sahib sistemlər eyni zamanda qeyd və bant genişliyi  baxımından   böyük qənaətlərə şərait yaradır və lazım olan təhlükəsizlik işçisi sayını da azaldaraq xərclərin azalmasını təmin edir.
+                                    | Görüntü analiz alqoritmləri bir neçə il əvvəl ilə müqayisədə daha da ağıllı xüsusiyyətlərə sahib olmağa davam edir və nisbətən çox daha sadə olan Video Hərəkət Qəbul etmə (VMD) sistemlərinə görə olduqca irəliləyir. Ağıllı VCA (qısaca IVA), real zamanlı görüntülərdəki şübhəli fəaliyyətləri ya da həyəcan vəziyyətlərinin təyin olunması üçün “təyin olunan qaydaları” canlı görüntüdə davamlı analiz edir. Hal-hazırda IVA alqoritmləri: tək hərəkət qəbul etmə tutumuna sahib deyil
 
               
         include pug_template/footer.pug

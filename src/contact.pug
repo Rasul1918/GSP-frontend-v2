@@ -1,0 +1,49 @@
+extends pug_template/head
+
+block unique-content
+    .content
+        include pug_template/navbar.pug
+        main.main
+            .container
+                h1.content-header Əlaqə
+                .green-line   
+                .content-text
+                    | “GSP” şirkəti fiziki şəxslərə və korporativ müştərilərə genişzolaqlı fiber optik və hava xətti üzərindən internet xidmətləri göstərir. Şirkətin 
+                    | internet şəbəkəsi ən müasir tələblərə cavab verən avadanlıqlar üzərində qurulmuşdur.
+                .contact-ways
+                    .d-flex.contact__info__row
+                    .call-office-number.d-flex.mr-5.mb-5
+                        img(src="img/footer-office-phone.svg").call-office-number__icon.mr-3
+                        .call-office-number__numbers
+                            a(href="tel:+994 12 310 00 66").contact-way-text +994 12 310 00 66
+                            br
+                            a(href="tel:+994 12 310 00 77").contact-way-text +994 12 310 00 77
+                    .d-flex.mb-5
+                        img(src="img/footer-smartphone.svg").call-mobile-number-icon.mr-3
+                        a(href="tel:+994 77 410-00-66").contact-way-text +994 77 410-00-66
+                    .d-flex.mb-5
+                        img(src="img/footer-whatsapp.svg").whatsapp-number-icon.mr-3
+                        a(href=" https://wa.me/+994 77 410 00 66" target="_blank").contact-way-text +994 77 410 00 66
+                    .d-flex.mb-5
+                        img(src="img/footer-mail.svg").contact-mail-icon.mr-3
+                        a(href="mailto:info@gsp.az").contact-way-text info@gsp.az
+                .row
+                    .col-md-6.px-5
+                        form(action="").contact-form
+                            h1.content-header Bizə yazın
+                            .green-line   
+                            .mb-5.content-text Suallarınız üçün bizə yazın
+                            input.w-100.mb-4.px-5.py-3.contact-form__input(type="text",placeholder="Adınız və Soyadınız")
+                            input.w-100.mb-4.px-5.py-3.contact-form__input(type="email",placeholder="E-mail Adresiniz")
+                            textarea(name="", cols="30", rows="9",placeholder="Mesajınız").w-100.mb-4.px-5.py-3.contact-form__input
+                            button.w-100.mb-5.px-5.py-3.contact-form__button(type="submit") Daxil Edin
+                    .col-md-6.px-5
+                        iframe.map.h-100(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1519.281726398357!2d49.82544215828994!3d40.39636693755784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dfbeac27253%3A0x6cadb8d4348baefd!2sGSP+MMC!5e0!3m2!1sru!2s!4v1552469018213", frameborder='0', style='border:0;', allowfullscreen='')
+                        .green-div
+                        
+
+
+
+              
+        include pug_template/footer.pug
+
