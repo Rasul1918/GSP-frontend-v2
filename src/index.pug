@@ -4,12 +4,12 @@ block unique-content
     .content
         include pug_template/navbar.pug
         main.main
-            .top-content.position-relative
+            .top-content.position-relative.mx-auto.MB-6
                 img.w-100(src="img/home-bg.svg")
                 .top-content__info-box.w-100.d-flex.align-items-center
                     .top-content__info-box__info
                         h2.info-box__info__header Keyfiyyətli Xidmət Yalnız Bizimlə! 
-                        p.info-box__info__text
+                        .info-box__info__text
                             | 2008-ci ildə əsası qoyulmuş “Global Service Provider” MMC çoxşaxəli İT xidmətlərini 
                             | bir ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən aparıcı informasiya 
                             | və kommunikasiya şirkətidir.
@@ -17,7 +17,7 @@ block unique-content
                         img(src="img/triangle.svg").w-100.h-100
                         i.fa.fa-chevron-down
             #services-header.main__header Xidmətlərimiz
-            .our-services
+            .our-services.mx-auto.MB-15
                 .services-info
                     .services-info__header Sizin üçün edəcəklərimiz
                     hr.services-green-line

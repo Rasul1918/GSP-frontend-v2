@@ -64,10 +64,12 @@ a {
   height: 19rem; }
 
 .content-header {
+  margin-top: 8.5rem;
   font: 700 4.8rem Muli, sans-serif;
   color: #08202B; }
 
 .green-line {
+  margin-bottom: 2.5rem;
   width: 80px;
   color: #24873D;
   border: solid; }
@@ -124,7 +126,7 @@ body::after {
   margin-left: 133px;
   color: white; }
   .top-content__info-box__info .info-box__info__header {
-    font: 700 28px DIN Pro; }
+    font: 700 28px FF DIN Pro; }
   .top-content__info-box__info .info-box__info__text {
     font: 200 14px FF Din Pro; }
 
@@ -146,10 +148,10 @@ body::after {
     font-size: 13px; }
 
 .main__header {
+  margin-bottom: 7rem;
   font: 400 50px Muli, sans-serif;
   color: #08202B;
-  text-align: center;
-  margin-top: 55px; }
+  text-align: center; }
 
 .our-services {
   display: -webkit-box;
@@ -165,8 +167,7 @@ body::after {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1020px;
-  margin: auto; }
+  max-width: 1020px; }
   .our-services .services-info {
     width: 510px;
     height: 196px;
@@ -412,7 +413,7 @@ body::after {
 .nv-link {
   text-decoration: none;
   padding: 0 1.7rem;
-  font: 400 15px DIN Pro;
+  font: 400 15px FF DIN Pro;
   color: white;
   opacity: 0.8;
   -webkit-transition: .4s all;
@@ -596,6 +597,7 @@ body::after {
     height: 40px !important; } }
 
 .footer {
+  margin-top: 10rem;
   -webkit-box-shadow: 0 -5px 13px -5px #9C9C9C;
      -moz-box-shadow: 0 -5px 13px -5px #9C9C9C;
           box-shadow: 0 -5px 13px -5px #9C9C9C; }
@@ -607,7 +609,7 @@ body::after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 41px; }
-  .my-footer .my-footer__logo {
+  .my-footer__logo {
     width: 208px;
     height: 70px; }
 
@@ -720,7 +722,7 @@ body::after {
               justify-content: space-evenly; }
       .my-slider .slick-list .slick-track .my-slider__item {
         width: 132px !important;
-        height: 130px;
+        height: 145px;
         outline: 0;
         margin: 0 auto; }
 
@@ -781,12 +783,14 @@ body::after {
   word-break: break-word; }
 
 .big-card-parent::after {
+  content: "";
   width: 294px; }
 
 .small-card-parent {
   word-break: break-word; }
 
 .small-card-parent::after {
+  content: "";
   width: 231px; }
 
 .about-card {
@@ -906,15 +910,17 @@ body::after {
   -webkit-box-shadow: 2px 3px 35px rgba(44, 53, 46, 0.05);
      -moz-box-shadow: 2px 3px 35px rgba(44, 53, 46, 0.05);
           box-shadow: 2px 3px 35px rgba(44, 53, 46, 0.05); }
-  .accordion__item--active .card-header h2 button .accordion-arrow {
-    color: #24873D;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  .accordion__item--active .card-header h2 button .accordion-header {
-    color: #24873D; }
+
+.change-header-color h2 button .accordion-arrow {
+  color: #24873D;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.change-header-color h2 button .accordion-header {
+  color: #24873D; }
 
 .contact-ways {
   margin-top: 8.8rem; }
@@ -961,55 +967,55 @@ body::after {
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../fonts/FF DIN Pro Black Italic.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Black Italic.otf") format("opentype");
   font-weight: 900;
   font-style: italic; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../fonts/FF DIN Pro Black.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Bold Italic.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Bold Italic.otf") format("opentype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Bold.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Light Italic.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Light Italic.otf") format("opentype");
   font-weight: 200;
   font-style: italic; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Light.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Light.otf") format("opentype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Medium Italic.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Medium Italic.otf") format("opentype");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Medium.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "FF DIN Pro";
-  src: url("../FF DIN Pro Regular.otf") format("opentype");
+  src: url("../../fonts/FF DIN Pro Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal; }
 
