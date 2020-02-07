@@ -16,8 +16,13 @@
         color: white
         font: 700 15px $main-font
         border-radius: 5px
-        border: 0
+        border: 1px solid transparent
         outline: none!important
+        transition: all 0.4s ease
+        &:hover
+            background-color: white
+            color: $main-color
+            border-color: $main-color
 
 .map
     width: 43.1rem
@@ -32,6 +37,8 @@
     z-index: -1
 
 @media (max-width: 768px) 
+    .contact-form
+        margin-bottom: 6rem
     .map
         width: 100%
     .green-div
