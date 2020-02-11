@@ -115,11 +115,9 @@ body::after {
   z-index: -1;
   content: url("../../img/service1green.svg") url("../../img/service2green.svg") url("../../img/service3green.svg") url("../../img/service4green.svg") url("../../img/service5green.svg") url("../../img/service6green.svg"); }
 
-.top-content__img-box {
-  height: 768px; }
-  .top-content__img-box img {
-    width: 100%;
-    height: 100%; }
+.top-content__img-box img {
+  width: 100%;
+  height: 100%; }
 
 .top-content__info-box {
   position: absolute;
@@ -354,35 +352,6 @@ body::after {
   .speed-test__info {
     padding: 0; } }
 
-@media (min-width: 1265px) {
-  .top-content__img-box {
-    min-height: 768px;
-    height: auto; } }
-
-@media (max-width: 1024px) {
-  .top-content__img-box {
-    height: 640px; } }
-
-@media (max-width: 768px) {
-  .top-content__img-box {
-    height: 480px; } }
-
-@media (max-width: 550px) {
-  .top-content__img-box {
-    height: 335px; } }
-
-@media (max-width: 420px) {
-  .top-content__img-box {
-    height: 258px; } }
-
-@media (max-width: 400px) {
-  .top-content__img-box {
-    height: 234px; } }
-
-@media (max-width: 350px) {
-  .top-content__img-box {
-    height: 200px; } }
-
 .my-navbar {
   position: absolute;
   width: 100%;
@@ -411,6 +380,8 @@ body::after {
   -webkit-box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.08);
      -moz-box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.08); }
+  .nav-second-type .logo-link .logo {
+    background-image: url("../../img/gsplog_colored.svg"); }
   .nav-second-type .nv-collapse {
     background-color: white; }
     .nav-second-type .nv-collapse .nv-list .nv-item .nv-link {
@@ -507,7 +478,13 @@ body::after {
   height: 6rem; }
 
 .logo {
-  width: inherit; }
+  width: inherit;
+  background-image: url("../../img/gsplogowhite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover; }
 
 .nv-collapse {
   display: -webkit-box;
