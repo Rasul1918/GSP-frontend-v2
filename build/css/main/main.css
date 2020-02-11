@@ -537,11 +537,7 @@ body::after {
           align-items: center;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  -webkit-transition: .4s all;
-  -o-transition: .4s all;
-  -moz-transition: .4s all;
-  transition: .4s all; }
+          flex-wrap: nowrap; }
 
 .nv-link {
   height: 100%;
@@ -550,10 +546,10 @@ body::after {
   font: 400 15px FF DIN Pro;
   color: white;
   opacity: 0.8;
-  -webkit-transition: .4s all;
-  -o-transition: .4s all;
-  -moz-transition: .4s all;
-  transition: .4s all; }
+  -webkit-transition: .4s opacity;
+  -o-transition: .4s opacity;
+  -moz-transition: .4s opacity;
+  transition: .4s opacity; }
   .nv-link:hover {
     color: white;
     opacity: 1; }
