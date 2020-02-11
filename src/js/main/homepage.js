@@ -23,7 +23,6 @@ const disableSearch = () => {
 
 const toggleNav = e => {
     $('.hamburger').click(function(){
-        $('.my-navbar').toggleClass('BG-black'); 
         $('.logo').toggleClass('d-none'); 
         $('.nv-collapse').toggleClass('toggle-nav');
     });
