@@ -50,6 +50,7 @@
   display: flex
   flex-wrap: wrap
   justify-content: center
+  margin-bottom: 15rem
   max-width: 1020px
   // margin: auto
   .services-info
@@ -142,6 +143,7 @@
     display: flex
     flex: 0 0 50%
     flex-direction: column
+    padding-left: 3rem
     &__header
       font: 700 29px $main-font
       margin: 30px 0 0 10px
@@ -156,11 +158,15 @@
     .top-content__info-box__info
       margin: 0 auto
   .our-services
+    margin-bottom: 0
     .services-info
       max-width: 510px
   .speed-test
-    flex-direction: column
+    flex-direction: column-reverse
     max-width: 85rem
+    margin-top: 2rem
+    &__info
+      margin-bottom: 10px
 
 
 @media (max-width: 500px)
@@ -174,6 +180,10 @@
       margin: 0 20px 30px 20px
     .service-card
       margin-bottom: 30px
+
+  .speed-test
+    &__info
+      padding: 0
 
 @media (min-width: 1265px)
   .top-content__img-box
