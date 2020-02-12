@@ -690,7 +690,7 @@ body::after {
     display: none; }
   .nv-link {
     height: auto; }
-  .search-form {
+  .nav-second-type .nv-collapse .search .search-form {
     border: 1px solid #7A7A7A; } }
 
 .footer {
