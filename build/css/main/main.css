@@ -1069,7 +1069,8 @@ body::after {
     border-color: #24873D; }
 
 .map {
-  width: 43.1rem; }
+  width: 43.1rem;
+  height: 100%; }
 
 .green-div {
   position: absolute;
