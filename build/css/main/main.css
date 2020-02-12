@@ -689,7 +689,9 @@ body::after {
   .nv-collapse {
     display: none; }
   .nv-link {
-    height: auto; } }
+    height: auto; }
+  .search-form {
+    border: 1px solid #7A7A7A; } }
 
 .footer {
   margin-top: 16.5rem;
