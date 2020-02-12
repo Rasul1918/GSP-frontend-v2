@@ -803,7 +803,6 @@ body::after {
 .service-content-box img {
   width: 100%;
   height: auto;
-  min-height: 40rem;
   margin: 2rem 0; }
 
 .my-slider {
