@@ -1035,6 +1035,10 @@ body::after {
 .change-header-color .accordion-header {
   color: #24873D; }
 
+@media (max-width: 400px) {
+  .accordion-body__img {
+    width: 100%; } }
+
 .contact-ways {
   margin-top: 8.8rem; }
 
