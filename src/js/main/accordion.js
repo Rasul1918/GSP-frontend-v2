@@ -9,8 +9,8 @@ const accordionFunc = ()=> {
     });
 
     // ORANGE TIMES ICON
-	$('.accordion__item__header').on('click', function () {
-	    	$('.accordion__item__header').not(this).removeClass('change-header-color');
+	$('.accordion-btn').on('click', function () {
+	    	$('.accordion-btn').not(this).removeClass('change-header-color');
 			$(this).toggleClass('change-header-color');     
 	    });
 

@@ -1024,7 +1024,7 @@ body::after {
      -moz-box-shadow: 2px 3px 35px rgba(44, 53, 46, 0.05);
           box-shadow: 2px 3px 35px rgba(44, 53, 46, 0.05); }
 
-.change-header-color h2 button .accordion-arrow {
+.change-header-color .accordion-arrow {
   color: #24873D;
   -webkit-transform: rotate(90deg);
      -moz-transform: rotate(90deg);
@@ -1032,7 +1032,7 @@ body::after {
        -o-transform: rotate(90deg);
           transform: rotate(90deg); }
 
-.change-header-color h2 button .accordion-header {
+.change-header-color .accordion-header {
   color: #24873D; }
 
 .contact-ways {
