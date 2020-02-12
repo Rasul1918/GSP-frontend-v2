@@ -983,7 +983,8 @@ body::after {
         -ms-flex-direction: column;
             flex-direction: column; }
   .project__info__header {
-    margin-top: 10px; } }
+    margin-top: 15px;
+    text-align: center; } }
 
 .accordion-header {
   font: 600 24px Muli, sans-serif;
