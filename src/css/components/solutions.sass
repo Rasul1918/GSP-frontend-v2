@@ -17,6 +17,9 @@
             button
                 box-shadow: none
 
+.accordion-text
+    text-align: justify
+
 .accordion__item--active
     border-radius: 10px
     border-color: white!important
@@ -28,7 +31,10 @@
         transform: rotate(90deg)
     .accordion-header
         color: $main-color
-
+@media (max-width: 768px)
+    .accordion-text
+        text-align: left
+        
 @media (max-width: 400px)
     .accordion-body__img
         width: 100%

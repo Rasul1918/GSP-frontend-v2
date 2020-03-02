@@ -352,6 +352,10 @@ body::after {
   .speed-test__info {
     padding: 0; } }
 
+@media (max-width: 500px) {
+  .main__header {
+    font: 400 40px Muli, sans-serif; } }
+
 .my-navbar {
   position: absolute;
   width: 100%;
@@ -938,6 +942,26 @@ body::after {
   margin: 0 32px;
   font: 200 14px Muli, sans-serif; }
 
+@media (max-width: 1199px) {
+  .small-about-card {
+    margin-left: 15px;
+    margin-right: 15px; } }
+
+@media (max-width: 767px) {
+  .small-card-parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
 .project {
   height: 300px;
   margin-bottom: 6rem;
@@ -1018,6 +1042,9 @@ body::after {
          -moz-box-shadow: none;
               box-shadow: none; }
 
+.accordion-text {
+  text-align: justify; }
+
 .accordion__item--active {
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
@@ -1037,6 +1064,10 @@ body::after {
 
 .change-header-color .accordion-header {
   color: #24873D; }
+
+@media (max-width: 768px) {
+  .accordion-text {
+    text-align: left; } }
 
 @media (max-width: 400px) {
   .accordion-body__img {
